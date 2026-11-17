@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-marine antialiased; }
+  h1, h2, h3 { @apply font-bold tracking-tight; }
+}
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-turquoise; }
+  .btn-primaire { @apply bg-soleil text-marine hover:bg-soleil-700; }
+  .btn-secondaire { @apply bg-turquoise text-white hover:bg-turquoise-700; }
+  .btn-contour { @apply border-2 border-marine/15 text-marine hover:border-soleil; }
+  .carte { @apply rounded-xl2 bg-white shadow-carte; }
+  .conteneur { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+}
+
+@layer components {
+  .tricolore { background: linear-gradient(90deg,#0B8A4B 0 33.3%,#F4C430 33.3% 66.6%,#E0343A 66.6%); }
+}
